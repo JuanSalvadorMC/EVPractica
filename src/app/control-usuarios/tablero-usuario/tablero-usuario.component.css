@@ -1,0 +1,52 @@
+.cabecera {
+  text-align: left;
+  background-color: #4bc7bc;
+}
+
+td,
+th {
+  padding: 6px 18px;
+}
+.icon :hover {
+  cursor: pointer;
+}
+.icon {
+  text-align: center;
+}
+
+table {
+width: 100%;
+  border: 1px solid #cdcdcd;
+  border-radius: 0px 0px 16px 16px;
+  background-color: #f3f3f3;
+  border-spacing: inherit;
+}
+.detalle {
+  text-align: center;
+}
+
+.tablero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* max-width: 80vw; */
+}
+
+.tablero > #agregar:hover {
+  cursor: pointer;
+}
+.tablero > #agregar > h4  {
+  display: flex;
+  align-items: center;
+  padding: 4px 6px 4px 16px;
+  border-radius: 26px;
+  
+  border: 1px solid #cdcdcd;
+  background-color: #e1e1e1;
+
+}
+.tablero > #agregar > h4 :hover {
+
+     
+  
+}

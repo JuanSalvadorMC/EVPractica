@@ -1,0 +1,24 @@
+section {
+    max-width: 800px;
+    border: 1px solid #cdcdcd;
+    border-radius: 16px;
+    background-color: #f3f3f3;
+    padding:16px 6%  16px calc(26px + 1vw);
+
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .class-form {
+  padding: 5px;
+  margin:  16px 16px 0;
+  width: calc(122px + 5vw);
+  border-bottom: 1px solid gray;
+}
+.class-form > label {
+  color: #414141;
+}
+.class-form > p {
+    font-weight: bold;
+    margin-bottom: 1px;
+}

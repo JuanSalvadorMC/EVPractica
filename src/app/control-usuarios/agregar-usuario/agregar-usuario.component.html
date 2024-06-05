@@ -1,0 +1,75 @@
+
+
+<div style="display: flex;
+align-items: center;">
+    <span routerLink="/" class="hover"  style="    margin: 12px 12px 10px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+          </svg>
+    </span >
+    <h3>Agregar usuario</h3>
+</div>
+
+<p>Los campos obligatorios para registrar a un usuario están marcados con un asterisco*</p>
+
+<section>
+
+    <form   [formGroup]="formEditUser" id="form">  
+        <div id="div-nombre" class="class-form">
+            <label for="nombre" >Nombre*</label>
+            <br>
+            <input required formControlName='nombre' id="nombre" type="text" placeholder="Nombre">
+        </div>
+        <div id="div-userName" class="class-form">
+            <label for="userName">Nombre de usuario*</label>
+            <br>
+            <input formControlName='userName' id="userName" type="text" placeholder="Nombre de usuario">
+        </div>
+        <div id="div-email" class="class-form">
+            <label for="email">Correo*</label>
+            <br>
+            <input formControlName='email' id="email" type="text" placeholder="Correo">
+        </div>
+        <div id="div-telefono" class="class-form">
+            <label for="telefono">Telefono</label>
+            <br>
+            <input formControlName='telefono' id="telefono" type="text" placeholder="Telefono">
+        </div>
+        <div id="div-sitioWeb" class="class-form">
+            <label for="sitioWeb">Sitio web</label>
+            <br>
+            <input formControlName='sitioWeb' id="sitioWeb" type="text" placeholder="Sitio web">
+        </div>
+        <div id="div-compania" class="class-form">
+            <label for="compania">Compañia</label>
+            <br>
+            <input formControlName='compania' id="compania" type="text" placeholder="Compañia">
+        </div>
+        <div id="div-calle" class="class-form">
+            <label for="calle">Calle</label>
+            <br>
+            <input formControlName='calle' id="calle" type="text" placeholder="Calle">
+        </div>
+        <div id="div-suite" class="class-form">
+            <label for="suite">Compañia</label>
+            <br>
+            <input formControlName='suite' id="suite" type="text" placeholder="Compañia">
+        </div>
+        <div id="div-ciudad" class="class-form">
+            <label for="ciudad">Ciudad</label>
+            <br>
+            <input formControlName='ciudad' id="ciudad" type="text" placeholder="Ciudad">
+        </div>
+        <div id="div-codigoPostal" class="class-form">
+            <label for="codigoPostal">Codigo postal</label>
+            <br>
+            <input formControlName='codigoPostal' id="codigoPostal" type="text" placeholder="Codigo postal">
+        </div>
+      
+       
+    </form>
+  
+
+</section>
+
+<div id="cont-submit"><button id="agregar"  (click)="registrarUsuario()" [disabled]="formEditUser.invalid" routerLink="/">Aceptar</button></div>

@@ -1,0 +1,69 @@
+<div style="display: flex;
+align-items: center;">
+    <span routerLink="/" class="hover"  style="    margin: 12px 12px 10px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16" style="cursor: pointer;">
+            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+          </svg>
+    </span >
+    <h3>Datos de usuario  {{this.usuarioDetalle.username}}</h3>
+</div>
+
+
+
+<section *ngIf="this.usuarioDetalle">
+
+  
+        <div id="div-nombre" class="class-form">
+            <label for="nombre" >Nombre</label>
+            <br>
+            <p>{{this.usuarioDetalle.name}}</p>
+        </div>
+        <div id="div-userName" class="class-form">
+            <label for="userName">Nombre de usuario*</label>
+            <br>
+            <p>{{this.usuarioDetalle.username}}</p>
+        </div>
+        <div id="div-email" class="class-form">
+            <label for="email">Correo*</label>
+            <br>
+            <p></p>
+        </div>
+        <div id="div-telefono" class="class-form">
+            <label for="telefono">Telefono</label>
+            <br>
+            <p>{{this.usuarioDetalle.email}}</p>
+        </div>
+        <div id="div-sitioWeb" class="class-form">
+            <label for="sitioWeb">Sitio web</label>
+            <br>
+            <p>{{this.usuarioDetalle.website}}</p>
+        </div>
+        <div id="div-compania" class="class-form">
+            <label for="compania">Compañia</label>
+            <br>
+            <p>{{this.usuarioDetalle.company}}</p>
+        </div>
+        <div id="div-calle" class="class-form">
+            <label for="calle">Calle</label>
+            <br>
+            <p>{{this.usuarioDetalle.street}}</p>
+        </div>
+        <div id="div-suite" class="class-form">
+            <label for="suite">Suite</label>
+            <br>
+            <p>{{this.usuarioDetalle.address.suite}}</p>
+        </div>
+        <div id="div-ciudad" class="class-form">
+            <label for="ciudad">Ciudad</label>
+            <br>
+            <p>{{this.usuarioDetalle.address.city}}</p>
+        </div>
+        <div id="div-codigoPostal" class="class-form">
+            <label for="codigoPostal">Codigo postal</label>
+            <br>
+            <p>{{this.usuarioDetalle.address.zipcode}}</p>
+        </div>
+      
+
+
+</section>
